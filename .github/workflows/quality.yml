@@ -1,0 +1,28 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  quality:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Validate Markdown
+        run: echo "TODO"
+
+      - name: Security Scan
+        run: echo "TODO"
+
+      - name: Docker Validation
+        run: echo "TODO"
+
+      - name: Five Stars Review
+        run: echo "TODO"
